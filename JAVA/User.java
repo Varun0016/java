@@ -7,12 +7,12 @@ String validPassword = args[1];
 Console console = System.console();
 String username = console.readLine("Enter username: ");
 char[] password = console.readPassword("Enter password: ");
-if (username.equals(validUsername) || password.equals(validPassword)){
-System.out.println("Invalid username or password. Please try again.");
+if (username.equals(validUsername) && password.equals(validPassword)){
+System.out.println("Login failed.Try again.");
 username = console.readLine("Enter username: ");
 password = console.readPassword("Enter password: ");
 }
-System.out.println("Login successful!");
+System.out.println("Login successful");
 }
 }
 
