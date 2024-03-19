@@ -1,0 +1,23 @@
+import java.util.*;
+import java.util.Arrays;
+
+public class ListEx {
+	public static void main(String[] args){
+		String[] arr = {"a","b","c","d"};
+		System.out.println(arrli);
+		
+		ArrayList <String> arrList = new ArrayList<String>(Arrays.asList(arr));
+		System.out.println(arrList);
+		
+		LinkedHashSet<String> list = new LinkedHashSet<>(arrList);
+		list.add("V");
+		list.add("A");
+		list.add("R");
+		System.out.println(list);
+		
+		HashMap<String , String> map = new HashMap<String , String>();
+		map.put("name","Varun");
+		map.put("class","java");
+		System.out.println(map);
+	}
+}
